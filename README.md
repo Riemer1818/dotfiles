@@ -12,6 +12,7 @@ Personal configuration files for Linux system.
 - **config/ranger/** - Ranger file manager config
 - **config/flameshot/** - Flameshot screenshot tool config
 - **config/qtile/** - Qtile window manager config
+- **config/Code/User/** - VSCode settings, keybindings, and snippets
 
 ## Installation
 

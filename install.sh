@@ -57,6 +57,13 @@ if [ -d "$DOTFILES_DIR/config/qtile" ]; then
     link_file "$DOTFILES_DIR/config/qtile" "$HOME/.config/qtile"
 fi
 
+if [ -d "$DOTFILES_DIR/config/Code" ]; then
+    mkdir -p "$HOME/.config/Code/User"
+    link_file "$DOTFILES_DIR/config/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
+    link_file "$DOTFILES_DIR/config/Code/User/keybindings.json" "$HOME/.config/Code/User/keybindings.json"
+    link_file "$DOTFILES_DIR/config/Code/User/snippets" "$HOME/.config/Code/User/snippets"
+fi
+
 echo ""
 echo "✓ Dotfiles installation complete!"
 echo "✓ Backups saved to: $BACKUP_DIR"

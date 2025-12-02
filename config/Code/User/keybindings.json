@@ -1,0 +1,61 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+i",
+        "command": "workbench.action.chat.sendToNewChat",
+        "when": "chatInputHasText && chatRequestIsPaused && inChatInput || chatInputHasText && inChatInput && !chatSessionRequestInProgress || chatPromptFileAttached && chatRequestIsPaused && inChatInput || chatPromptFileAttached && inChatInput && !chatSessionRequestInProgress"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-workbench.action.chat.sendToNewChat",
+        "when": "chatInputHasText && chatRequestIsPaused && inChatInput || chatInputHasText && inChatInput && !chatSessionRequestInProgress || chatPromptFileAttached && chatRequestIsPaused && inChatInput || chatPromptFileAttached && inChatInput && !chatSessionRequestInProgress"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !neovim.mode && !suggestWidgetVisible && !vim.active && editorLangId == 'python'"
+    },
+    {
+        "key": "enter",
+        "command": "-pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !neovim.mode && !suggestWidgetVisible && !vim.active && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && vim.active && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && vim.mode =~ /(Insert|Replace|SurroundInputMode)/"
+    },
+    {
+        "key": "enter",
+        "command": "-pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && vim.active && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && vim.mode =~ /(Insert|Replace|SurroundInputMode)/"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && neovim.mode == 'insert'"
+    },
+    {
+        "key": "enter",
+        "command": "-pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && neovim.mode == 'insert'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\\\r\n"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    }
+]

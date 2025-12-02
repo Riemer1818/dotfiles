@@ -42,6 +42,14 @@ if [ -f ~/.config/qtile/config.py ]; then
     echo "✓ Qtile config backed up"
 fi
 
+if [ -d ~/.config/Code/User ]; then
+    mkdir -p "$DOTFILES_DIR/config/Code/User"
+    cp ~/.config/Code/User/settings.json "$DOTFILES_DIR/config/Code/User/" 2>/dev/null || true
+    cp ~/.config/Code/User/keybindings.json "$DOTFILES_DIR/config/Code/User/" 2>/dev/null || true
+    cp -r ~/.config/Code/User/snippets "$DOTFILES_DIR/config/Code/User/" 2>/dev/null || true
+    echo "✓ VSCode config backed up"
+fi
+
 echo ""
 echo "✓ Backup complete!"
 echo ""

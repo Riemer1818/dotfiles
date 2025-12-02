@@ -1,0 +1,87 @@
+{
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.letterSpacing": 0.5,
+    "editor.fontLigatures": true,
+    
+    "terminal.integrated.fontFamily": "Ubuntu Mono",
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.lineHeight": 1.5,
+    "terminal.integrated.letterSpacing": 0.5,
+  
+
+    // Custom color overrides to match your Kitty colors
+    "workbench.colorCustomizations": {
+        // Terminal colors
+        "terminal.background": "#000000",
+        "terminal.foreground": "#FFFF00",
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiBrightBlack": "#232323",
+        "terminal.ansiRed": "#FF0055",
+        "terminal.ansiBrightRed": "#FF007F",
+        "terminal.ansiGreen": "#00FF41",
+        "terminal.ansiBrightGreen": "#00FF7F",
+        "terminal.ansiYellow": "#FFFF00",
+        "terminal.ansiBrightYellow": "#FFFF55",
+        "terminal.ansiBlue": "#00BBFF",
+        "terminal.ansiBrightBlue": "#00DDFF",
+        "terminal.ansiMagenta": "#FF00FF",
+        "terminal.ansiBrightMagenta": "#FF55FF",
+        "terminal.ansiCyan": "#00FFFF",
+        "terminal.ansiBrightCyan": "#55FFFF",
+        "terminal.ansiWhite": "#BBBBBB",
+        "terminal.ansiBrightWhite": "#FFFFFF",
+        
+        // Editor colors with yellow text
+        "editor.background": "#000000",
+        "editor.foreground": "#FFFF00",
+        "editorCursor.foreground": "#FFFF00",
+        "editor.lineHighlightBackground": "#232323",
+        "editor.selectionBackground": "#00BBFF40",
+        
+        // Additional editor UI elements to match the yellow theme
+        "editorLineNumber.foreground": "#FFFF00",
+        "editorLineNumber.activeForeground": "#FFFFFF",
+        "editorIndentGuide.background": "#FFFF0033",
+        "editorIndentGuide.activeBackground": "#FFFF0066",
+        
+        // Status bar and other UI elements 
+        "statusBar.background": "#000000",
+        "statusBar.foreground": "#FFFF00",
+        "sideBar.background": "#000000",
+        "sideBar.foreground": "#FFFF00",
+        "activityBar.background": "#000000",
+        "activityBar.foreground": "#FFFF00",
+        "titleBar.activeBackground": "#000000",
+        "titleBar.activeForeground": "#FFFF00"
+    },
+
+    // Optional: keyboard shortcuts to match Kitty's clipboard behavior
+    "keyboard.shortcuts": [
+        {
+            "key": "ctrl+shift+c",
+            "command": "editor.action.clipboardCopyAction",
+            "when": "terminalFocus"
+        },
+        {
+            "key": "ctrl+shift+v",
+            "command": "editor.action.clipboardPasteAction",
+            "when": "terminalFocus"
+        }
+    ],
+    "accessibility.signals.terminalBell": {
+        "sound": "off"
+    },
+    "terminal.integrated.enableVisualBell": false,
+    "git.autofetch": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.startupEditor": "none",
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.createEnvironment.trigger": "off",
+    "hediet.vscode-drawio.resizeImages": null,
+    "git.ignoreMissingGitWarning": true,
+    "extensions.ignoreRecommendations": true
+}
