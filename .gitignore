@@ -1,0 +1,15 @@
+# Sensitive files
+**/rclone.conf
+**/*password*
+**/*secret*
+**/*token*
+**/.env
+
+# Backup files
+*.backup
+*~
+.*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
