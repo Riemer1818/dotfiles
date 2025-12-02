@@ -53,6 +53,10 @@ if [ -d "$DOTFILES_DIR/config/flameshot" ]; then
     link_file "$DOTFILES_DIR/config/flameshot" "$HOME/.config/flameshot"
 fi
 
+if [ -d "$DOTFILES_DIR/config/qtile" ]; then
+    link_file "$DOTFILES_DIR/config/qtile" "$HOME/.config/qtile"
+fi
+
 echo ""
 echo "✓ Dotfiles installation complete!"
 echo "✓ Backups saved to: $BACKUP_DIR"

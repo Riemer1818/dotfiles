@@ -11,6 +11,7 @@ Personal configuration files for Linux system.
 - **config/tmux/** - Tmux terminal multiplexer config
 - **config/ranger/** - Ranger file manager config
 - **config/flameshot/** - Flameshot screenshot tool config
+- **config/qtile/** - Qtile window manager config
 
 ## Installation
 

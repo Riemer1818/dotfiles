@@ -37,6 +37,11 @@ if [ -d ~/.config/flameshot ]; then
     echo "✓ Flameshot config backed up"
 fi
 
+if [ -f ~/.config/qtile/config.py ]; then
+    cp ~/.config/qtile/config.py "$DOTFILES_DIR/config/qtile/"
+    echo "✓ Qtile config backed up"
+fi
+
 echo ""
 echo "✓ Backup complete!"
 echo ""
